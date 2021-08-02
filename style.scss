@@ -1,0 +1,88 @@
+* {
+    outline: 1px solid red;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+li,
+li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 3rem;
+}
+
+.box {
+    width: 320px;
+    height: 440px;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 375px;
+}
+
+.box * {
+    padding: 15px 0;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    width: 70%;
+    height: 30px;
+}
+
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
