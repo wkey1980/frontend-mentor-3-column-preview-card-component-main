@@ -37,52 +37,140 @@ body {
     background-color: hsl(0, 0%, 95%);
 }
 
-.container {
+.wrapper {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    margin: 3rem;
+    // Temp Color
+    background-color: lightblue;
+}
+
+.container {
+    width: 85vw;
+    height: 85vh;
+    display: grid;
+}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: minmax(320px 440px) minmax(320px 440px) minmax(320px 440px);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.luxury {
+    margin-bottom: 60px;
+    background-color: hsl(179, 100%, 13%);
+}
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
 }
 
 .box {
     width: 320px;
     height: 440px;
-
-    padding: 30px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 375px;
-}
-
-.box * {
-    padding: 15px 0;
 }
 
 h1 {
     color: hsl(0, 0%, 95%);
 }
+
 p {
     color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
 }
 
 .btn {
     background-color: hsl(0, 0%, 95%);
-    width: 70%;
-    height: 30px;
+    width: 146px;
+    height: 48px;
+    border-radius: 25px;
 }
 
 
-.sedans {
-    background-color: hsl(31, 77%, 52%);
+@media (min-width: 1440px) {
+    .wrapper {
+        background-color: teal;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-.suvs {
-    background-color: hsl(184, 100%, 22%);
-}
-.luxury {
-    background-color: hsl(179, 100%, 13%);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// font-family: 'Big Shoulders Display', cursive;
+// font-family: 'Lexend Deca', sans-serif;
+
+
+
+
+
+
+
+
+
+
+// button 128px wide
+// 150 hewigh
+
+// line spacing 17px
+
+
+
+
+// @media (min-width: 1440px) {
+//     .container {
+//         width: 100vw;
+//         height: 100%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: row;
+//     }
+// }
+
+
+// footer * {
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: center;
+//     // align-items: center;
+//     width: 100vw;
+//     height: 30px;
+//     outline: 1px solid red;
+// }
